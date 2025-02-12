@@ -30,9 +30,9 @@ char	*ft_itoa(int n)
 	char				*s;
 	long int			len;
 	unsigned int		number;
-	int					sign;
+	// int					sign;
 
-	sign = 1;
+	// sign = 1;
 	len = ft_len(n);
 	s = (char *)malloc(sizeof(char) * (len + 1));
 	if (!(s))
@@ -42,7 +42,7 @@ char	*ft_itoa(int n)
 		s[0] = '0';
 	if (n < 0)
 	{
-		sign *= -1;
+		// sign *= -1;
 		number = n * -1;
 		s[0] = '-';
 	}
